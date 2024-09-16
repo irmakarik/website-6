@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alistirma 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        max-width: 100%;
+      }
+
+      .kapsayici {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      #bölge1 {
+        display: flex;
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      #bölge1 > div > img {
+        width: 3rem;
+      }
+      #bölge1 > div {
+        /*4 tane flex item div seçildi*/
+        border: 1px solid rgb(234, 233, 233);
+        padding: 1rem;
+        border-radius: 8px;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap; /*içindeki 3 öğe sığmayınca, aşağıya kaydırma açılır. DİKKAT! Flex-direction: column ile karıştırılmamalıdır.*/
+      }
+
+      #bölge1 > div >
+      #bölge1 > div > h2 {
+        font-weight: 500;
+        color: rgb(35, 35, 35);
+      }
+      @media all and (max-width: 576px) {
+        #bolge1 {
+          flex-direction: column;
+          padding: 0 1rem; /*üst-alt 0   sol-sağ 1rem*/
+        }
+        #bölge1 > div {
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="bölge1" class="kapsayici">
+      <div>
+        <img src="img/icon1.svg" alt="" />
+        <h2>Güvenli İnternet</h2>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      <div>
+        <img src="img/hedef icon.svg" alt="" />
+        <h2>TurkNet Yaklaşımı</h2>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      <div>
+        <img src="img/file.svg" alt="" />
+        <h2>Şeffaflık Raporu</h2>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      <div>
+        <img src="img/dosyaicon.svg" alt="" />
+        <h2>TurkNet GigaFiber</h2>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </section>
+  </body>
+</html>
